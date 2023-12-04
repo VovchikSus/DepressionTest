@@ -1,0 +1,10 @@
+D:\PROJECTS\DepressionTest\DepressionTest\bin\Debug\DepressionTest.exe.config
+D:\PROJECTS\DepressionTest\DepressionTest\bin\Debug\DepressionTest.exe
+D:\PROJECTS\DepressionTest\DepressionTest\bin\Debug\DepressionTest.pdb
+D:\PROJECTS\DepressionTest\DepressionTest\obj\Debug\DepressionTest.csproj.AssemblyReference.cache
+D:\PROJECTS\DepressionTest\DepressionTest\obj\Debug\DepressionTest.csproj.SuggestedBindingRedirects.cache
+D:\PROJECTS\DepressionTest\DepressionTest\obj\Debug\DepressionTest.Properties.Resources.resources
+D:\PROJECTS\DepressionTest\DepressionTest\obj\Debug\DepressionTest.csproj.GenerateResource.cache
+D:\PROJECTS\DepressionTest\DepressionTest\obj\Debug\DepressionTest.csproj.CoreCompileInputs.cache
+D:\PROJECTS\DepressionTest\DepressionTest\obj\Debug\DepressionTest.exe
+D:\PROJECTS\DepressionTest\DepressionTest\obj\Debug\DepressionTest.pdb
