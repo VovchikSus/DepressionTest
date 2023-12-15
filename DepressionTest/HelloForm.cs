@@ -10,9 +10,14 @@ namespace DepressionTest
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            TestForm newTestForm = new TestForm();
+            HelloForm newHelloForm = new HelloForm();
+            newTestForm.Show();
+            newHelloForm.Close();
+            
         }
     }
 }

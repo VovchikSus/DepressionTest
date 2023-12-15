@@ -8,3 +8,8 @@ D:\PROJECTS\DepressionTest\DepressionTest\obj\Debug\DepressionTest.csproj.Genera
 D:\PROJECTS\DepressionTest\DepressionTest\obj\Debug\DepressionTest.csproj.CoreCompileInputs.cache
 D:\PROJECTS\DepressionTest\DepressionTest\obj\Debug\DepressionTest.exe
 D:\PROJECTS\DepressionTest\DepressionTest\obj\Debug\DepressionTest.pdb
+D:\PROJECTS\DepressionTest\DepressionTest\bin\Debug\FontAwesome.Sharp.dll
+D:\PROJECTS\DepressionTest\DepressionTest\bin\Debug\Guna.UI2.dll
+D:\PROJECTS\DepressionTest\DepressionTest\obj\Debug\DepressionTest.HelloForm.resources
+D:\PROJECTS\DepressionTest\DepressionTest\obj\Debug\DepressionTest.csproj.CopyComplete
+D:\PROJECTS\DepressionTest\DepressionTest\obj\Debug\DepressionTest.TestForm.resources
