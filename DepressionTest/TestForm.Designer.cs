@@ -32,24 +32,36 @@ namespace DepressionTest
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.minimizeButton = new FontAwesome.Sharp.IconButton();
             this.minMaxButton = new FontAwesome.Sharp.IconButton();
             this.closeButton = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.LabelQuestion = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.LabelName = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.CheckBox3 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.CheckBox2 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.CheckBox0 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -134,12 +146,24 @@ namespace DepressionTest
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(50)))));
+            this.panel2.Controls.Add(this.LabelQuestion);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 47);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(371, 488);
             this.panel2.TabIndex = 1;
+            // 
+            // LabelQuestion
+            // 
+            this.LabelQuestion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LabelQuestion.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabelQuestion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.LabelQuestion.Location = new System.Drawing.Point(0, 80);
+            this.LabelQuestion.Name = "LabelQuestion";
+            this.LabelQuestion.Size = new System.Drawing.Size(371, 408);
+            this.LabelQuestion.TabIndex = 1;
+            this.LabelQuestion.Text = "1. Замечаете ли Вы, что стали более медлительны и вялы, что нет прежней энергично" + "сти? \r\n";
             // 
             // panel4
             // 
@@ -173,7 +197,7 @@ namespace DepressionTest
             // 
             // guna2Button1
             // 
-            this.guna2Button1.CustomizableEdges = customizableEdges1;
+            this.guna2Button1.CustomizableEdges = customizableEdges11;
             this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -183,10 +207,11 @@ namespace DepressionTest
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.Location = new System.Drawing.Point(12, 0);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            this.guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges12;
             this.guna2Button1.Size = new System.Drawing.Size(189, 74);
             this.guna2Button1.TabIndex = 1;
             this.guna2Button1.Text = "Далее";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
             // 
             // panel6
             // 
@@ -199,10 +224,11 @@ namespace DepressionTest
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.panel3.Controls.Add(this.CheckBox3);
-            this.panel3.Controls.Add(this.CheckBox2);
-            this.panel3.Controls.Add(this.CheckBox1);
-            this.panel3.Controls.Add(this.CheckBox0);
+            this.panel3.Controls.Add(this.guna2Button6);
+            this.panel3.Controls.Add(this.guna2Button5);
+            this.panel3.Controls.Add(this.guna2Button4);
+            this.panel3.Controls.Add(this.guna2Button3);
+            this.panel3.Controls.Add(this.guna2Button2);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(371, 47);
@@ -210,82 +236,90 @@ namespace DepressionTest
             this.panel3.Size = new System.Drawing.Size(583, 488);
             this.panel3.TabIndex = 2;
             // 
-            // CheckBox3
+            // guna2Button6
             // 
-            this.CheckBox3.Animated = true;
-            this.CheckBox3.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.CheckBox3.CheckedState.BorderRadius = 0;
-            this.CheckBox3.CheckedState.BorderThickness = 0;
-            this.CheckBox3.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.CheckBox3.Font = new System.Drawing.Font("Bebas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CheckBox3.ForeColor = System.Drawing.Color.White;
-            this.CheckBox3.Location = new System.Drawing.Point(29, 275);
-            this.CheckBox3.Name = "CheckBox3";
-            this.CheckBox3.Size = new System.Drawing.Size(531, 79);
-            this.CheckBox3.TabIndex = 5;
-            this.CheckBox3.Text = "Я не чувствую себя расстроенным печальным";
-            this.CheckBox3.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.CheckBox3.UncheckedState.BorderRadius = 0;
-            this.CheckBox3.UncheckedState.BorderThickness = 0;
-            this.CheckBox3.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2Button6.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.guna2Button6.CustomizableEdges = customizableEdges1;
+            this.guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 20.25F);
+            this.guna2Button6.ForeColor = System.Drawing.Color.White;
+            this.guna2Button6.Location = new System.Drawing.Point(232, 207);
+            this.guna2Button6.Name = "guna2Button6";
+            this.guna2Button6.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            this.guna2Button6.Size = new System.Drawing.Size(120, 41);
+            this.guna2Button6.TabIndex = 6;
+            this.guna2Button6.Text = "5";
             // 
-            // CheckBox2
+            // guna2Button5
             // 
-            this.CheckBox2.Animated = true;
-            this.CheckBox2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.CheckBox2.CheckedState.BorderRadius = 0;
-            this.CheckBox2.CheckedState.BorderThickness = 0;
-            this.CheckBox2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.CheckBox2.Font = new System.Drawing.Font("Bebas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CheckBox2.ForeColor = System.Drawing.Color.White;
-            this.CheckBox2.Location = new System.Drawing.Point(29, 190);
-            this.CheckBox2.Name = "CheckBox2";
-            this.CheckBox2.Size = new System.Drawing.Size(531, 79);
-            this.CheckBox2.TabIndex = 4;
-            this.CheckBox2.Text = "Я не чувствую себя расстроенным печальным";
-            this.CheckBox2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.CheckBox2.UncheckedState.BorderRadius = 0;
-            this.CheckBox2.UncheckedState.BorderThickness = 0;
-            this.CheckBox2.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2Button5.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.guna2Button5.CustomizableEdges = customizableEdges3;
+            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 20.25F);
+            this.guna2Button5.ForeColor = System.Drawing.Color.White;
+            this.guna2Button5.Location = new System.Drawing.Point(416, 160);
+            this.guna2Button5.Name = "guna2Button5";
+            this.guna2Button5.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            this.guna2Button5.Size = new System.Drawing.Size(120, 41);
+            this.guna2Button5.TabIndex = 5;
+            this.guna2Button5.Text = "4";
             // 
-            // CheckBox1
+            // guna2Button4
             // 
-            this.CheckBox1.Animated = true;
-            this.CheckBox1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.CheckBox1.CheckedState.BorderRadius = 0;
-            this.CheckBox1.CheckedState.BorderThickness = 0;
-            this.CheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.CheckBox1.Font = new System.Drawing.Font("Bebas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CheckBox1.ForeColor = System.Drawing.Color.White;
-            this.CheckBox1.Location = new System.Drawing.Point(29, 20);
-            this.CheckBox1.Name = "CheckBox1";
-            this.CheckBox1.Size = new System.Drawing.Size(531, 79);
-            this.CheckBox1.TabIndex = 3;
-            this.CheckBox1.Text = "Я не чувствую себя расстроенным печальным";
-            this.CheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.CheckBox1.UncheckedState.BorderRadius = 0;
-            this.CheckBox1.UncheckedState.BorderThickness = 0;
-            this.CheckBox1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.CheckBox1.UseVisualStyleBackColor = false;
+            this.guna2Button4.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.guna2Button4.CustomizableEdges = customizableEdges5;
+            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 20.25F);
+            this.guna2Button4.ForeColor = System.Drawing.Color.White;
+            this.guna2Button4.Location = new System.Drawing.Point(290, 160);
+            this.guna2Button4.Name = "guna2Button4";
+            this.guna2Button4.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            this.guna2Button4.Size = new System.Drawing.Size(120, 41);
+            this.guna2Button4.TabIndex = 4;
+            this.guna2Button4.Text = "3";
             // 
-            // CheckBox0
+            // guna2Button3
             // 
-            this.CheckBox0.Animated = true;
-            this.CheckBox0.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.CheckBox0.CheckedState.BorderRadius = 0;
-            this.CheckBox0.CheckedState.BorderThickness = 0;
-            this.CheckBox0.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.CheckBox0.Font = new System.Drawing.Font("Bebas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CheckBox0.ForeColor = System.Drawing.Color.White;
-            this.CheckBox0.Location = new System.Drawing.Point(29, 105);
-            this.CheckBox0.Name = "CheckBox0";
-            this.CheckBox0.Size = new System.Drawing.Size(531, 79);
-            this.CheckBox0.TabIndex = 2;
-            this.CheckBox0.Text = "Я не чувствую себя расстроенным печальным";
-            this.CheckBox0.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.CheckBox0.UncheckedState.BorderRadius = 0;
-            this.CheckBox0.UncheckedState.BorderThickness = 0;
-            this.CheckBox0.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2Button3.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.guna2Button3.CustomizableEdges = customizableEdges7;
+            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 20.25F);
+            this.guna2Button3.ForeColor = System.Drawing.Color.White;
+            this.guna2Button3.Location = new System.Drawing.Point(164, 160);
+            this.guna2Button3.Name = "guna2Button3";
+            this.guna2Button3.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            this.guna2Button3.Size = new System.Drawing.Size(120, 41);
+            this.guna2Button3.TabIndex = 3;
+            this.guna2Button3.Text = "2";
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.guna2Button2.CustomizableEdges = customizableEdges9;
+            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 20.25F);
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.Location = new System.Drawing.Point(38, 160);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            this.guna2Button2.Size = new System.Drawing.Size(120, 41);
+            this.guna2Button2.TabIndex = 2;
+            this.guna2Button2.Text = "1";
             // 
             // TestForm
             // 
@@ -306,16 +340,18 @@ namespace DepressionTest
             this.ResumeLayout(false);
         }
 
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button guna2Button4;
+        private Guna.UI2.WinForms.Guna2Button guna2Button5;
+        private Guna.UI2.WinForms.Guna2Button guna2Button6;
+
+        private System.Windows.Forms.Label LabelQuestion;
+
         private FontAwesome.Sharp.IconButton minMaxButton;
         private FontAwesome.Sharp.IconButton minimizeButton;
 
         private FontAwesome.Sharp.IconButton closeButton;
-
-        private Guna.UI2.WinForms.Guna2CheckBox CheckBox1;
-        private Guna.UI2.WinForms.Guna2CheckBox CheckBox2;
-        private Guna.UI2.WinForms.Guna2CheckBox CheckBox3;
-
-        private Guna.UI2.WinForms.Guna2CheckBox CheckBox0;
 
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
 
