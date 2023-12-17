@@ -1,6 +1,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using FontAwesome.Sharp;
 
 namespace DepressionTest
 {
@@ -61,13 +62,40 @@ namespace DepressionTest
             "20. У Вас возникает чувство, что во многих неприятностях виноваты Вы сами? "
         };
 
+        //Объявление цветов
+
+        //Активные кнопки
+        private Color activeBackGroundColor = Color.FromArgb(52, 52, 52);
+        private Color activeForeGroundColor = Color.FromArgb(47, 180, 90);
+
+        //Дефолтные кнопки
+        private Color defaultBackGroundColor = Color.FromArgb(46, 46, 50);
+        private Color defaultForeGroundColor = Color.FromArgb(200, 200, 200);
+
         // Переменные для движения окна
         bool dragging = false;
         Point dragCursorPoint;
         Point dragFormPoint;
 
         //Переменная Вопроса
-        int numberOfQuestion=0;
+        int numberOfQuestion = 0;
+
+        //Массив интерпетирумых результатов
+        private double[] interpretationResult = new double[20];
+
+
+
+        private void ResetButton()
+        {
+            guna2Button2.Checked = false;
+            guna2Button3.Checked = false;
+            guna2Button4.Checked = false;
+            guna2Button5.Checked = false;
+            guna2Button6.Checked = false;
+            iconButton1.Enabled = false;
+        }
+
+
         private void iconButton1_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -124,19 +152,68 @@ namespace DepressionTest
                 this.Location = Point.Add(dragFormPoint, new Size(dif));
             }
         }
+
         
 
-        private void guna2Button1_Click_1(object sender, EventArgs e)
+        private void iconButton2_Click_1(object sender, EventArgs e)
         {
-            if (numberOfQuestion<questions.Length-1)
+            if (numberOfQuestion > 0)
             {
-                numberOfQuestion++;
-                LabelQuestion.Text = questions[numberOfQuestion];  
+                numberOfQuestion--;
+                LabelQuestion.Text = questions[numberOfQuestion];
             }
             else
             {
-                
             }
+        }
+
+        private void iconButton1_Click_2(object sender, EventArgs e)
+        {
+            if (numberOfQuestion < questions.Length - 1)
+            {
+                numberOfQuestion++;
+                ResetButton();
+                LabelQuestion.Text = questions[numberOfQuestion];
+            }
+            else
+            {
+            }
+        }
+
+
+        private void ResultIntepretation(int buttonNum)
+        {
+            interpretationResult[numberOfQuestion] = tableOfAnswers[numberOfQuestion, buttonNum-1];
+            label1.Text=Convert.ToString(interpretationResult[numberOfQuestion] );
+        }
+
+        private void guna2Button2_CheckedChanged(object sender, EventArgs e)
+        {
+            ResultIntepretation(1);
+            iconButton1.Enabled = true;
+        }
+
+        private void guna2Button3_CheckedChanged(object sender, EventArgs e)
+        {
+            ResultIntepretation(2);
+            iconButton1.Enabled = true;
+        }
+
+        private void guna2Button4_CheckedChanged(object sender, EventArgs e)
+        {
+            ResultIntepretation(3);
+            iconButton1.Enabled = true;
+        }
+
+        private void guna2Button5_CheckedChanged(object sender, EventArgs e)
+        {
+            ResultIntepretation(4);
+            iconButton1.Enabled = true;
+        }
+
+        private void guna2Button6_CheckedChanged(object sender, EventArgs e)
+        {
+            ResultIntepretation(5);
         }
     }
 }
