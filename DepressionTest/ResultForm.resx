@@ -120,11 +120,4 @@
   <metadata name="guna2BorderlessForm1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Инструкция: 
-Пожалуйста, ответьте на серию вопросов, которые помогут выяснить Ваше самочувствие, одним из пяти вариантов ответа: состояния, указанные в вопросе, у меня почти постоянно или всегда;  бывают часто; бывают временами; встречаются очень редко; никогда не бывало.
-Будьте искренни. 
-Если вопрос вам непонятен - обратитесь за разъяснением.
-</value>
-  </data>
 </root>

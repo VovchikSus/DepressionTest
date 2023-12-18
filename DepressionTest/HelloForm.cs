@@ -11,13 +11,17 @@ namespace DepressionTest
         }
 
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void iconButton1_Click(object sender, EventArgs e)
         {
             TestForm newTestForm = new TestForm();
             HelloForm newHelloForm = new HelloForm();
             newTestForm.Show();
             newHelloForm.Close();
-            
+        }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
