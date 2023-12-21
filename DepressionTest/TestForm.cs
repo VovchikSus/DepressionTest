@@ -63,15 +63,7 @@ namespace DepressionTest
             "20. У Вас возникает чувство, что во многих неприятностях виноваты Вы сами? "
         };
 
-        //Объявление цветов
-
-        //Активные кнопки
-        private Color activeBackGroundColor = Color.FromArgb(52, 52, 52);
-        private Color activeForeGroundColor = Color.FromArgb(47, 180, 90);
-
-        //Дефолтные кнопки
-        private Color defaultBackGroundColor = Color.FromArgb(46, 46, 50);
-        private Color defaultForeGroundColor = Color.FromArgb(200, 200, 200);
+        
 
         // Переменные для движения окна
         bool dragging = false;
@@ -86,7 +78,7 @@ namespace DepressionTest
         private double[] anexityResult = new double[10];
 
         //Переменные для таблицы резульатов
-        private int anexityNum = 0;
+        private int anexityNum;
         private int depressionNum;
 
         //Переменная изменяемого ответа
@@ -185,19 +177,19 @@ namespace DepressionTest
 
         private void iconButton1_Click_2(object sender, EventArgs e)
         {
-            if (numberOfQuestion < questions.Length-1)
+            if (numberOfQuestion < questions.Length - 1)
             {
                 if (tableOfAnswers[numberOfQuestion, 0] == 1)
                 {
                     depressionResult[depressionNum] = changebleInterpretationAnswer;
-                    //label1.Text = Convert.ToString(depressionResult[depressionNum]);
+                    
                     depressionNum++;
                 }
 
                 else
                 {
                     anexityResult[anexityNum] = changebleInterpretationAnswer;
-                   // label2.Text = Convert.ToString(anexityResult[anexityNum]);
+                    
                     anexityNum++;
                 }
 
@@ -209,8 +201,12 @@ namespace DepressionTest
             else
             {
                 depressionResult[depressionNum] = changebleInterpretationAnswer;
-                //label1.Text = Convert.ToString(depressionResult[depressionNum]);
-                LabelQuestion.Text = ("Depression " + SumArray(depressionResult) + "anexity" + SumArray(anexityResult));
+               
+                Results.DepressionResult = SumArray(depressionResult);
+                Results.AnexityResult = SumArray(anexityResult);
+                ResultForm resultForm = new ResultForm();
+                Hide();
+                resultForm.Show();
             }
         }
 
@@ -267,7 +263,5 @@ namespace DepressionTest
 
             return sum;
         }
-
-      
     }
 }

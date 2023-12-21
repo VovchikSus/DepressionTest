@@ -99,6 +99,9 @@ namespace DepressionTest
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(800, 47);
             this.panel2.TabIndex = 0;
+            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            this.panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
+            this.panel2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             // 
             // closeButton
             // 
